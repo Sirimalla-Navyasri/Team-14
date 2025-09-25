@@ -9,34 +9,44 @@
 <body>
         <div id="recipes"></div>
         <section id="restaurants">
-            <h2>Popular Restaurants</h2>
+            <h2 align="center">Popular Restaurants</h2>
             <div class="restaurant-list">
                 <!-- <div> -->
                 <div class="restaurant">
                     <img src="pizza.png" alt="Pizza Place" height="53%">
                     <h3>Pizza Place</h3>
-                    <button onclick="addToCart('Pizza')">Order Pizza </button>
+                    <p class="food-price"><strong>Price:</strong> ₹250</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★☆ (4.2)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Pizza', price: 250, img: 'pizza.png'}))">Order Pizza </button>
                 </div><br>
                 <div class="restaurant">
                     <img src="burger.png" alt="Burger Joint" height="53%">
                     <h3>Burger Joint</h3>
-                    <button onclick="addToCart('Burger')">Order Burger</button>
+                    <p class="food-price"><strong>Price:</strong> ₹180</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★☆ (4.0)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Burger', price: 180, img: 'burger.png'}))">Order Burger</button>
                 </div><br>
                 <div class="restaurant">
                     <img src="sushi.png" alt="Sushi Bar" height="53%">
                     <h3>Sushi Bar</h3>
-                    <button onclick="addToCart('Sushi')">Order Sushi</button>
+                    <p class="food-price"><strong>Price:</strong> ₹320</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★★ (4.8)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Sushi', price: 320, img: 'sushi.png'}))">Order Sushi</button>
                 </div><br>
                 <!-- </div> -->
                 <div class="restaurant">
                     <img src="kfc.png" alt="KFC" height="53%">
                     <h3>KFC</h3>
-                    <button onclick="addToCart('kfc')">Order KFC </button>
+                    <p class="food-price"><strong>Price:</strong> ₹220</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★☆ (4.1)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'KFC', price: 220, img: 'kfc.png'}))">Order KFC </button>
                 </div><br>
                 <div class="restaurant">
                     <img src="Ramen.png" alt="Naruto Ramen" height="53%">
                     <h3>Naruto Ramen</h3>
-                    <button onclick="addToCart('Ramen')">Order Ramen</button>
+                    <p class="food-price"><strong>Price:</strong> ₹210</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★☆ (4.3)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Ramen', price: 210, img: 'Ramen.png'}))">Order Ramen</button>
                 </div><br>
             </div><br><br>
             <div class="restaurant-list">
@@ -44,27 +54,37 @@
                 <div class="restaurant">
                     <img src="pista.png" alt="Biryani" height="53%">
                     <h3>Biryani</h3>
-                    <button onclick="addToCart('Biryani')">Order Biryani </button>
+                    <p class="food-price"><strong>Price:</strong> ₹300</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★★ (4.7)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Biryani', price: 300, img: 'pista.png'}))">Order Biryani </button>
                 </div><br>
                 <div class="restaurant">
                     <img src="dessi.png" alt="Icecream" height="53%">
                     <h3>Icecream</h3>
-                    <button onclick="addToCart('Icecream')">Order Icecream </button>
+                    <p class="food-price"><strong>Price:</strong> ₹90</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★☆ (4.0)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Icecream', price: 90, img: 'dessi.png'}))">Order Icecream </button>
                 </div><br>
                 <div class="restaurant">
                     <img src="paradise.png" alt="Mandi" height="53%">
                     <h3>Mandi</h3>
-                    <button onclick="addToCart('Mandi')">Order Mandi</button>
+                    <p class="food-price"><strong>Price:</strong> ₹350</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★★ (4.9)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Mandi', price: 350, img: 'paradise.png'}))">Order Mandi</button>
                 </div><br>
                 <div class="restaurant">
                     <img src="ks.png" alt="Cakes" height="53%">
                     <h3>Cakes</h3>
-                    <button onclick="addToCart('Cakes')">Order Cake </button>
+                    <p class="food-price"><strong>Price:</strong> ₹150</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★☆ (4.2)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Cakes', price: 150, img: 'ks.png'}))">Order Cake </button>
                 </div><br>
                 <div class="restaurant">
                     <img src="mrtea.png" alt="Dum Chai" height="53%">
                     <h3>Dum Chai</h3>
-                    <button onclick="addToCart('Dum Chai')">Order Dum Chai </button>
+                    <p class="food-price"><strong>Price:</strong> ₹60</p>
+                    <p class="food-rating"><strong>Rating:</strong> ★★★★☆ (4.1)</p>
+                    <button onclick="addToCart(JSON.stringify({name: 'Dum Chai', price: 60, img: 'mrtea.png'}))">Order Dum Chai </button>
                 </div><br>
                 </div>
             </div>
@@ -72,6 +92,9 @@
     <script src="script.js"></script>
     <button>
     <a href="index.html">Go To Back to Page</a>
+    </button>
+    <button>
+    <a href="cart.html">Go To Cart</a>
     </button>
 </body>
 </html>

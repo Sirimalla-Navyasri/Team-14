@@ -1,3 +1,15 @@
+.food-rating {
+    font-size: 1em;
+    color: #ff9800;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.food-price {
+    font-size: 1.05em;
+    color: #e65100;
+    margin: 6px 0 10px 0;
+    font-weight: bold;
+}
 .order-search-btn {
     margin-top: 10px;
     padding: 8px 16px;
