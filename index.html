@@ -3,15 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Food Delivery System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Team-14</h1>
-    <h2>Team Lead:S.Navyasri</h2>
-    <h3>Team Members</h3>
-    <ol>
-        <li>A.Maheshwari</li>
-        <li>P.Akhila Reddy</li>
-    </ol>
+    <header>
+        <h1>Foodie Express</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="rest.html">Restaurants</a>
+            <a href="cart.html">Cart</a>
+            <a href="pro.html"></a>
+        </nav>
+    </header>
+    <main>
+        <div id="search-box">
+        <input type="text" id="search" placeholder="Search for a meal (e.g. chicken)">
+        <button onclick="searchMeal()">Search</button>
+        </div>
+        <div id="recipes"></div>
+ 
+    <marquee behavior="" direction="">
+        <img src="pizza.png" alt="" width="650" height="450">
+        <img src="kfc.png" alt="" width="650" height="450">
+        <img src="ramen.png" alt="" width="650" height="450">
+        <img src="dessi.png" alt="" width="650" height="450"> 
+        <img src="burger.png" alt="" width="650" height="450">
+    </marquee>
+    <hr>
+               <div class="food-scroll-container">
+                <div class="food-item">
+                    <img src="pizza.png" alt="Pizza">
+                    <div class="food-text">Pizza</div>
+                </div>
+                <div class="food-item">
+                    <img src="burger.png" alt="Burger">
+                    <div class="food-text">Burger</div>
+                </div>
+                <div class="food-item">
+                    <img src="sushi.png" alt="Sushi">
+                    <div class="food-text">Sushi</div>
+                </div>
+                <div class="food-item">
+                    <img src="ramen.png" alt="Ramen">
+                    <div class="food-text">Ramen</div>
+                </div>
+                <div class="food-item">
+                    <img src="kfc.png" alt="KFC">
+                    <div class="food-text">KFC</div>
+                </div>
+                <div class="food-item">
+                    <img src="dessi.png" alt="Dessi">
+                    <div class="food-text">Dessi</div>
+                </div>
+                <div class="food-item">
+                    <img src="pista.png" alt="Pista">
+                    <div class="food-text">Pista</div>
+                </div>
+            </div>
+            <hr>
+    </main>
+    <footer>
+        <p>&copy; 2025 Foodie Express. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
